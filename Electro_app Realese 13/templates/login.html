@@ -1,0 +1,45 @@
+{% extends "mytemplate.html" %}
+{% block bodycontent %}
+<h2 style="text-align:center">Login Here</h2><br/></br/>
+<center><form  id="Form"  action="/validate" method="post">
+    <table>
+        <tr>
+            <td>
+               <font color="#FFFFFF">User Name: </font>
+                <br>
+                <br>
+            </td>
+            <td>
+               <input type="text" name="uname" required/>
+                <br>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <font color="#FFFFFF"> Password:  </font>
+                <br>
+                <br>
+            </td>
+            <td>
+                <input type="password" name="pw" required>
+                <br>
+                <br>
+
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                   <input type="submit" value="Click Here To Login"><br>
+
+            </th>
+        </tr>
+    </table>
+
+</form>
+
+<br/>
+<br/>
+<a href="/newuser">New User? Register Here</a>
+</center>
+{% endblock %}

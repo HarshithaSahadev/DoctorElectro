@@ -1,0 +1,72 @@
+{% extends "mytemplate.html" %}
+{% block bodycontent %}
+<h2 style="text-align:center"> New Device </h2>
+<center>
+<form action="/adddevice" method="post">
+    <table>
+        <tr>
+            <td>
+              <font color="#FFFFFF">Device Name : </font>
+            </td>
+            <td>
+                <input type="text" name="dname" required/>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <font color="#FFFFFF"> Device Model : </font>
+            </td>
+            <td>
+              <input type="text" name="dmodel" required>
+              <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <font color="#FFFFFF"> Device Manf Cost :  </font>
+            </td>
+            <td>
+               <input type="text" name="dMCost" required>
+               <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <font color="#FFFFFF"> Device Selling Cost :  </font>
+            </td>
+            <td>
+               <input type="text" name="dSCost" required>
+               <br>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <font color="#FFFFFF"> Other Cost : </font>
+            </td>
+            <td>
+               <input type="text" name="OCost" required>
+               <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <font color="#FFFFFF">Remarks : </font>
+            </td>
+            <td>
+               <input type="text" name="remarks" required>
+               <br>
+            </td>
+        </tr>
+
+
+        <tr>
+            <th colspan="2">
+                    <input type="submit" value="Add Device">
+            </th>
+        </tr>
+    </table>
+</form>
+</center>
+{% endblock %}

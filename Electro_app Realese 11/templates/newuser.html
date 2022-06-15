@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to MyWebSite.com</title>
+               <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body background="{{ url_for('static', filename='images/bg2.jpg') }}" style="background-size:cover;" >
+<nav  class="nav">
+        <img src="{{ url_for('static', filename='images/logo3.jpeg') }}">
+     <a href="/login">Login</a>|
+    <a href="/about">About</a>|
+    <a href="/">Home</a>
+</nav>
+
+<h1>Dr ELECTRO</h1>
+<h2 style="text-align:center">New User? Register Here</h2>
+<center>
+<form action="/register" method="post">
+    <table>
+        <tr>
+            <td>
+              <font color="#FFFFFF">User Name: </font>
+            </td>
+            <td>
+                <input type="text" name="uname" required/>
+                <br>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+            <font color="#FFFFFF"> Password: </font>
+            </td>
+            <td>
+              <input type="password" name="pw1" required>
+              <br>
+                <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                          <font color="#FFFFFF">   Re Enter Password:</font>
+            </td>
+            <td>
+              <input type="password" name="pw2" required>
+              <br>
+              <br>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <font color="#FFFFFF"> Email:  </font>
+
+            </td>
+            <td>
+               <input type="email" name="email" required>
+               <br>
+               <br>
+            </td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                    <input type="submit" value="Click Here To Register">
+
+            </th>
+        </tr>
+    </table>
+</form>
+</center>
+<section class="footer">
+<p class="copyright">
+@ Copyright   Dr Electro 2022.<br/>
+All rights reserved</p>
+</section>
+</body>
+</html>

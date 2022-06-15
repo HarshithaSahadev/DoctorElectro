@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to MyWebSite.com</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body background="{{ url_for('static', filename='images/bg2.jpg') }}" style="background-size:cover;">
+<nav class="nav">
+    <img src="{{ url_for('static', filename='images/logo3.jpeg') }}" class="img-fluid">
+     <a href="/login">Login</a>
+    <a href="/about">About</a>
+    <a href="/">Home</a>
+</nav>
+
+<h1>Dr ELECTRO</h1>
+<br/>
+<br/>
+<br/>
+<div class="a">
+<p>
+    Hello.....! it's a leap into the smart devices ......<br/>
+    Avail exciting offers, Buy Now! New launches.<br/><br/>
+</p>
+</div>
+<section class="footer">
+<p class="copyright">
+@ Copyright   Dr Electro 2022.<br/>
+    All rights reserved</p>
+</section>
+</body>
+</html>
